@@ -6,94 +6,98 @@
   <title>Portfolio - Sanket Kumkar</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+    .portfolio-section {
+      padding: 4rem 2rem;
+      background-color: #1F252E;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
     }
+
+    .portfolio-section h1 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: var(--primary-color);
+      font-size: 2.5rem;
+    }
+
     .portfolio-container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-    .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
     }
+
     .project-card {
-      background-color: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      transition: transform 0.3s ease;
+      background-color: #2a313b;
+      padding: 1.5rem;
+      border-left: 4px solid var(--primary-color);
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
     }
+
     .project-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 0 12px var(--primary-color);
     }
-    .project-title {
-      font-size: 20px;
-      font-weight: bold;
-      color: #003366;
-      margin-bottom: 10px;
+
+    .project-card h3 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
     }
-    .project-desc {
-      font-size: 14px;
+
+    .project-card p {
+      font-size: 0.95rem;
       line-height: 1.6;
+      color: #d0d0d0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .project-card {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul style="list-style: none; display: flex; gap: 20px; padding: 10px; background-color: ">
+  <header class="page-header">
+    <div class="logo"><a href="index.html">Sanket</a></div>
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 
-  <div class="portfolio-container">
-    <h1>My Cybersecurity Portfolio</h1>
-    <p>Here’s a glimpse of my real-world security adventures and digital contributions.</p>
+  <section class="portfolio-section">
+    <h1>My Projects</h1>
+    <div class="portfolio-container">
 
-    <div class="project-grid">
       <div class="project-card">
-        <div class="project-title">Bug Bounty Reports</div>
-        <div class="project-desc">
-          Discovered and responsibly disclosed multiple security vulnerabilities on platforms like <strong>HackerOne</strong> and <strong>Bugcrowd</strong>, including XSS, IDOR, and authentication flaws.
-        </div>
+        <h3>Emergency Detection System</h3>
+        <p>AI-powered video analytics project for detecting emergencies in real-time and guiding evacuation with alerts and collaboration systems.</p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">WiFi Cracking Simulation</div>
-        <div class="project-desc">
-          Created a lab environment to simulate wireless attacks and understand the workings of WPA/WPA2 vulnerabilities using tools like Aircrack-ng and Wireshark.
-        </div>
+        <h3>CyberSec Scanner</h3>
+        <p>Python tool to scan common web vulnerabilities including XSS, SQLi, and headers misconfigurations. Designed for beginner-level pentesters.</p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">OSINT Investigation Project</div>
-        <div class="project-desc">
-          Performed open-source intelligence gathering on digital personas, revealing key insights using tools like Maltego, SpiderFoot, and Google Dorking.
-        </div>
+        <h3>Bug Bounty Tracker</h3>
+        <p>Custom dashboard to manage and organize reported vulnerabilities from HackerOne/Bugcrowd, with tagging and notes features.</p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">Web App Penetration Testing</div>
-        <div class="project-desc">
-          Conducted full-stack security assessments of demo applications using Burp Suite, OWASP ZAP, and manual testing techniques aligned with the OWASP Top 10.
-        </div>
+        <h3>Wi-Fi Packet Sniffer</h3>
+        <p>Developed a lightweight tool using Python and Scapy to sniff, capture, and analyze Wi-Fi packets. Useful in forensic data collection.</p>
       </div>
 
-      <div class="project-card">
-        <div class="project-title">Capture The Flag (CTF) Challenges</div>
-        <div class="project-desc">
-          Actively participated in CTF competitions on platforms like TryHackMe and Hack The Box, sharpening skills in reverse engineering, web exploitation, and cryptography.
-        </div>
-      </div>
     </div>
-  </div>
+  </section>
 </body>
 </html>
