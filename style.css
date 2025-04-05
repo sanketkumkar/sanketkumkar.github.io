@@ -29,12 +29,13 @@ body {
 }
 /* Nav */
 header {
-    background: #0d1b2a; /* darker navy for better contrast */
+    background: #0d1b2a; /* or any color you like */
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 .page-header {
     display: flex;
