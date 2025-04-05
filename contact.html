@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Sanket Kumkar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f6fc;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      margin-bottom: 30px;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .info strong {
+      color: #003366;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #005599;
+    }
+
+    nav {
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003366;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+
+    <div class="info">
+      <p><strong>Phone:</strong> +91 8180880625</p>
+      <p><strong>Email:</strong> <a href="mailto:sanketkumkar77@gmail.com">sanketkumkar77@gmail.com</a></p>
+      <p><strong>Address:</strong> Pune, Maharashtra – 412105</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
