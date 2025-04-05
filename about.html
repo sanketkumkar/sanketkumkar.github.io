@@ -3,92 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me - Sanket Kumkar</title>
+  <title>Skills - Sanket Kumkar</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .about-section {
+    .skills-section {
       padding: 4rem 2rem;
       background-color: #1F252E;
       color: #ffffff;
       font-family: 'Outfit', sans-serif;
     }
 
-    .about-container {
+    .skills-container {
       max-width: 900px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
 
-    .about-section h1 {
-      font-size: 2.5rem;
+    .skill-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
       color: var(--primary-color);
-      margin-bottom: 1rem;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+      background-color: #2d3642;
+    }
+
+    h1 {
       text-align: center;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      font-size: 2.5rem;
     }
 
-    .about-section p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 1rem;
-      color: #ddd;
-      text-align: justify;
-    }
-
-    @media screen and (max-width: 768px) {
-      .about-container {
-        padding: 1.5rem;
-      }
-
-      .about-section h1 {
-        font-size: 2rem;
-      }
-
-      .about-section p {
-        font-size: 1rem;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      .about-section {
-        padding: 3rem 1rem;
-      }
-
-      .about-section h1 {
-        font-size: 1.8rem;
-      }
-
-      .about-section p {
+    @media screen and (max-width: 600px) {
+      .skill-box {
         font-size: 0.95rem;
+        padding: 0.8rem 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-
   <header class="page-header">
     <div class="logo"><a href="index.html">Sanket</a></div>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a class="active" href="about.html">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="skills.html">Skills</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </header>
 
-  <section class="about-section">
-    <div class="about-container">
-      <h1>About Me</h1>
-      <p>Hello! I'm <strong>Sanket Kumkar</strong>, a passionate cybersecurity enthusiast currently pursuing my BCA in Cyber Forensics & Information Security at Ajeenkya DY Patil University, Pune.</p>
-      
-      <p>I've earned certifications in various cybersecurity domains and continuously expand my knowledge through real-world experience. When I’m not studying or learning, I actively participate in <strong>bug bounty hunting</strong> on platforms like <strong>HackerOne</strong> and <strong>Bugcrowd</strong>, where I explore vulnerabilities and contribute to making the internet a safer place.</p>
-      
-      <p>Whether it’s diving into penetration testing, reverse engineering, or forensic analysis, I enjoy every bit of solving complex cyber puzzles. My mission is to grow as a cybersecurity expert and help secure the digital world.</p>
+  <section class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+      <div class="skill-box">Penetration Testing</div>
+      <div class="skill-box">Network Security</div>
+      <div class="skill-box">Bug Bounty Hunting</div>
+      <div class="skill-box">Web Application Security</div>
+      <div class="skill-box">Linux & Terminal</div>
+      <div class="skill-box">Forensics & Investigation</div>
+      <div class="skill-box">Burp Suite</div>
+      <div class="skill-box">Wireshark</div>
+      <div class="skill-box">Kali Linux</div>
+      <div class="skill-box">Nmap & Recon Tools</div>
     </div>
   </section>
-
 </body>
 </html>
