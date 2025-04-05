@@ -29,7 +29,7 @@ body {
 }
 /* Nav */
 header {
-    background: transparent; /* or any color you like */
+    background: ; /* or any color you like */
     position: sticky;
     top: 0;
     z-index: 1000;
