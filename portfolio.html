@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Sanket Kumkar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .portfolio-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+    .project-desc {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 20px; padding: 10px; background-color: #f2f2f2;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="portfolio-container">
+    <h1>My Cybersecurity Portfolio</h1>
+    <p>Here’s a glimpse of my real-world security adventures and digital contributions.</p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-title">Bug Bounty Reports</div>
+        <div class="project-desc">
+          Discovered and responsibly disclosed multiple security vulnerabilities on platforms like <strong>HackerOne</strong> and <strong>Bugcrowd</strong>, including XSS, IDOR, and authentication flaws.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">WiFi Cracking Simulation</div>
+        <div class="project-desc">
+          Created a lab environment to simulate wireless attacks and understand the workings of WPA/WPA2 vulnerabilities using tools like Aircrack-ng and Wireshark.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">OSINT Investigation Project</div>
+        <div class="project-desc">
+          Performed open-source intelligence gathering on digital personas, revealing key insights using tools like Maltego, SpiderFoot, and Google Dorking.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Web App Penetration Testing</div>
+        <div class="project-desc">
+          Conducted full-stack security assessments of demo applications using Burp Suite, OWASP ZAP, and manual testing techniques aligned with the OWASP Top 10.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">Capture The Flag (CTF) Challenges</div>
+        <div class="project-desc">
+          Actively participated in CTF competitions on platforms like TryHackMe and Hack The Box, sharpening skills in reverse engineering, web exploitation, and cryptography.
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
