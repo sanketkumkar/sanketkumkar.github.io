@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Sanket Kumkar</title>
+  <title>About Me - Sanket Kumkar</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-section {
+      padding: 5rem 8.4rem;
+      background-color: #1F252E;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .about-section h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <ul style="list-style: none; display: flex; gap: 20px; padding: 10px; background-color: 
-      ">
+
+  <header class="page-header">
+    <div class="logo"><a href="index.html">Sanket</a></div>
+    <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="about.html">About</a></li>
       <li><a href="skills.html">Skills</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+  </header>
 
-  <main style="padding: 20px;">
-    <h1>About Me</h1>
-    <p>
-      Hey! I'm <strong>Sanket Kumkar</strong>, a passionate cybersecurity enthusiast currently pursuing my BCA in 
-      <strong>Cyber Forensics and Information Security</strong> at <strong>Ajeenkya DY Patil University</strong>.
-    </p>
-    
-    <p>
-      While most students are still figuring out their paths, I’ve already found my spark in the digital shadows. 
-      My curiosity about how things break (and how to fix them) has led me to earn certifications across multiple 
-      cybersecurity domains — from ethical hacking to network defense.
-    </p>
+  <section class="about-section">
+    <div class="about-container">
+      <h1>About Me</h1>
+      <p>Hello! I'm <strong>Sanket Kumkar</strong>, a passionate cybersecurity enthusiast currently pursuing my BCA in Cyber Forensics & Information Security at Ajeenkya DY Patil University, Pune.</p>
+      
+      <p>I've earned certifications in various cybersecurity domains and continuously expand my knowledge through real-world experience. When I’m not studying or learning, I actively participate in <strong>bug bounty hunting</strong> on platforms like <strong>HackerOne</strong> and <strong>Bugcrowd</strong>, where I explore vulnerabilities and contribute to making the internet a safer place.</p>
+      
+      <p>Whether it’s diving into penetration testing, reverse engineering, or forensic analysis, I enjoy every bit of solving complex cyber puzzles. My mission is to grow as a cybersecurity expert and help secure the digital world.</p>
+    </div>
+  </section>
 
-    <p>
-      Beyond academics, I actively engage in <strong>bug bounty hunting</strong> on platforms like <strong>HackerOne</strong> and 
-      <strong>Bugcrowd</strong>, where I enjoy identifying real-world vulnerabilities and making the web a safer place. 
-      Every exploit I find fuels my drive and sharpens my skills.
-    </p>
-
-    <p>
-      I blend my technical expertise with a constant hunger to learn, adapt, and innovate in the ever-evolving 
-      world of cybersecurity. Whether it’s dissecting malware, tracing digital footprints, or testing web apps — 
-      I’m all in.
-    </p>
-
-    <p>
-      This is just the beginning of my journey. The mission? To leave a secure mark on the digital world. 💻🔐
-    </p>
-  </main>
 </body>
 </html>
